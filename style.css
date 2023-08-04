@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(239, 248, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav img{
+    width: 5%;
+    height: 80%;
+}
+.nav-mid{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-mid a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(150, 149, 149);
+}
+nav button{
+    width: 12%;
+    height: 50px;
+    border-radius: 25px;
+    border: 4px solid black;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+.herosec{
+    width: 75%;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txtpt{
+    width: 49%;
+    height: 98%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#p1{
+    font-size: 12px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#p2{
+    font-size: 18px;
+    color: rgb(152, 148, 148);
+    margin-bottom: 40px;
+
+}
+.txtpt h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.txtpt span{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.txtpt span button{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 4px solid black;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.txtpt span a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+
+}
+#a1{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.bgpt{
+    width: 49%;
+    height: 98%;
+    background-color: rgb(184, 232, 112);
+    border-radius: 20px;
+    position: relative;
+}
+.box1{
+    width:50%;
+    height: 70%;
+    /* border: 1px solid black; */
+    background-image: url(./images/flip-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(45, 40, 40);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: -30px;
+}
+.box2{
+    width:50%;
+    height: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    
+
+}
+.box2 img{
+    width: 50%;
+    height: 45%;
+   
+}
+.box2 h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.box2 p{
+    font-size: 12px;
+}
+.box2 button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+    /* position: ;
+    top: 10px;
+    right: 5px; */
+}
+
+
+
+/* Responsive */
+@media(max-width:768px){
+    .container{
+        height: auto;
+    }
+    .nav-mid{
+        display: none;
+    }
+    nav{
+        height: 50px;
+        padding-inline: 10px;
+    }
+    nav img{
+        width: 10%;
+        height: 90%;
+    }
+    nav button{
+        width: 20%;
+        height: 70%;
+        font-size: 15px;
+    }
+    .herosec{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 98%;
+        height: 1050px;
+    }
+    .txtpt{
+        width: 100%;
+        height: 500px;
+    }
+    .txtpt h1{
+        font-size: 50px;
+    }
+    .bgpt{
+        width: 100%;
+        height: 500px;
+    }
+    .box2{
+        right: 25px;
+    }
+    .box1{
+        left:0;
+    }
+      
+}
